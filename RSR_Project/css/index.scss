@@ -1,0 +1,84 @@
+@import "navbar";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  // SETTINGS FOR BACKGROUND IMAGE IN THE HEADER
+  background: url("../images/gym-background.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  // MAIN HERO SECTION
+  .header-wrapper {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex: 1;
+    gap: 100px;
+    align-items: center;
+    padding-bottom: 100px;
+
+    .slogan {
+      color: white;
+      text-align: center;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+      h1 {
+        font-size: clamp(3rem, 8vw, 5rem);
+        text-transform: uppercase;
+
+        &::after {
+          content: " - New Me";
+          color: #ff4d4d;
+        }
+      }
+
+      p {
+        font-size: x-large;
+      }
+    }
+
+    .achievents-board {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      max-width: 700px; // for pushing to the second row
+      color: white;
+      margin-top: 35px;
+
+      section {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: hsla(0, 0%, 16%, 0.8);
+        width: 280px;
+        text-align: center;
+        border-radius: 20px;
+      }
+
+      & > section > p:nth-of-type(1) {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #ff4d4d;
+        font-weight: bolder;
+        font-size: 2.5rem;
+        line-height: 0.5;
+      }
+
+      & > section > p:nth-last-of-type(1) {
+        font-size: medium;
+        opacity: 0.8;
+      }
+    }
+  }
+}
