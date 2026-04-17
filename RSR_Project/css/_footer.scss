@@ -1,2 +1,16 @@
 @import "default";
 
+footer {
+  margin-top: 20px;
+
+  background-color: #1a1a1a;
+  color: white;
+
+  padding: 30px;
+  text-align: center;
+
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
