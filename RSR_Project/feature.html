@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Feature</title>
     <link rel="stylesheet" href="css/feature.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
   </head>
   <body>
     <div data-include="navbar.html"></div>
-    <div class="container">
+
+    <!-- - Why Choose Us -- part -->
+    <div class="reason-wrapper">
       <h2>Why Choose Us</h2>
 
       <div class="reason-container">
         <section class="equipment">
+          <span class="material-symbols-outlined icon-style"> exercise </span>
           <h3>Modern Equipment</h3>
           <p>
             State-of-the-art fitness equipment for the best workout experience.
@@ -20,6 +27,7 @@
         </section>
 
         <section class="trainers">
+          <span class="material-symbols-outlined icon-style"> wrist </span>
           <h3>Expert Trainers</h3>
           <p>
             Professional trainers to guide you through your fitness journey.
@@ -27,11 +35,82 @@
         </section>
 
         <section class="access">
+          <span class="material-symbols-outlined icon-style"> timer </span>
           <h3>24/7 Access</h3>
           <p>Work out anytime that suits your schedule.</p>
         </section>
       </div>
     </div>
+
+    <!--  Facilities info section -->
+    <div class="facilities-wrapper">
+      <h2>Our Facilities</h2>
+      <div class="facilities-container">
+        <section>
+          <div class="image-box">
+            <img src="images/modern-equipment.jpg" alt="Modern Gym Equipment" />
+            <div class="text-overlay">
+              <p>Equipment</p>
+              <p>Modern Gym Equiment</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="image-box">
+            <img src="images/group-training.jpg" alt="Group Training Section" />
+            <div class="text-overlay">
+              <p>Training</p>
+              <p>Group Training Section</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="image-box">
+            <img src="images/yoga-class.png" alt="Yoga Class" />
+            <div class="text-overlay">
+              <p>Classes</p>
+              <p>Yoga Class</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="image-box">
+            <img src="images/cardio-zone.jpg" alt="Cardio Zone" />
+            <div class="text-overlay">
+              <p>Equipment</p>
+              <p>Cardio Zone</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="image-box">
+            <img src="images/personal-trainer.png" alt="Personal Training" />
+            <div class="text-overlay">
+              <p>Training</p>
+              <p>Personal Training</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="image-box">
+            <img src="images/cross-fit.jpg" alt="Crossfit Section" />
+            <div class="text-overlay">
+              <p>Classes</p>
+              <p>Crossfit Section</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div data-include="footer.html"></div>
+
     <script src="js/script.js"></script>
   </body>
 </html>

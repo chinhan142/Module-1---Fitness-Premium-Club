@@ -1,4 +1,132 @@
 @import "navbar";
 @import "default";
 
+.reason-wrapper {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  padding: 50px;
 
+  h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+
+  .reason-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; // helps section has auto height
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    section {
+      flex: 1;
+      text-align: center;
+      border: #dbd4d4 solid 1px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 20px;
+      padding: 20px;
+      background-color: white;
+
+      .icon-style {
+        display: inline-block;
+        background-color: hsl(0°, 100%, 90%);
+        color: #255, 77, 77;
+        padding: 20px;
+        border-radius: 20px;
+        font-size: 40px;
+      }
+
+      h3 {
+        font-size: x-large;
+      }
+    }
+  }
+}
+
+.facilities-wrapper {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  h2 {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+
+  .facilities-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    gap: 50px;
+    margin: 0 auto;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    section {
+      width: 400px;
+      border: 1px solid rgb(215, 206, 206);
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      color: white;
+
+      .image-box {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          // transition and transform
+          // transition: build the road
+          transition: transform 0.6s ease;
+          // transform: build the animation
+          transform: scale(1);
+        }
+
+        &:hover img {
+          transform: scale(1.1);
+        }
+
+        .text-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          // adjust the text to the center of the frame
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          opacity: 0;
+          transition: opacity 0.4s ease;
+          background-color: rgba(0, 0, 0, 0.6);
+
+          & > p:nth-of-type(1) {
+            font-weight: bold;
+            padding: 10px;
+            width: 150px;
+            background-color: #ff4d4d;
+            border-radius: 10px;
+          }
+
+          & > p:nth-of-type(2) {
+            font-weight: bold;
+          }
+        }
+
+        &:hover .text-overlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

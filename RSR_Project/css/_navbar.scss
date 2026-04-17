@@ -1,4 +1,12 @@
 // NAV BAR SECTION
+[data-include="navbar.html"] {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: block;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -6,9 +14,6 @@ nav {
   gap: 80px;
   background-color: hsla(260, 6%, 10%, 0.85);
   padding: 15px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
   & > a {
