@@ -1,40 +1,24 @@
-// NAV BAR SECTION
-[data-include="navbar.html"] {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  display: block;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  background-color: hsla(260, 6%, 10%, 0.85);
-  padding: 15px 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-  & > a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
+.custom-navbar {
+  .nav-link {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
 
     &:hover {
       color: #ff4d4d;
+      transform: translateY(-2px);
     }
   }
 
-  button {
-    padding: 15px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid black;
-    color: white;
+  .btn-danger {
     background-color: #ff4d4d;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #e63c3c;
+    }
   }
 }
