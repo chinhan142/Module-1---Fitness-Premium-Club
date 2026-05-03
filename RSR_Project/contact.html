@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div data-include="navbar.html"></div>
+    <header class="text-center text-white bg-dark">
+      <h2 class="display-4">Get in Touch</h2>
+      <p class="lh-lg fs-5 w-100 w-md-75 w-lg-50 mx-auto">
+        Have question about our gym or membership plans? We're here to help!
+        Fill out the form below and we'll get back to you as soon as possible
+      </p>
+    </header>
+
+    <div class="container mt-5">
+      <div class="row g-5 mb-4">
+        <div class="col-md-6">
+          <div class="h-100">
+            <form action="">
+              <div class="card p-4 shadow">
+                <h3 class="text-center fw-bold mb-4">Send us a Message</h3>
+                <div class="mb-4">
+                  <label for="fullName" class="form-label fw-bold"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter your full name"
+                    id="fullName"
+                    name="fullName"
+                    required
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label for="email" class="form-label fw-bold"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    id="email"
+                    name="email"
+                    required
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label for="message" class="form-label fw-bold"
+                    >Message</label
+                  >
+                  <textarea
+                    name=""
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="Enter your message"
+                    class="form-control"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <button class="btn btn-danger">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <section class="card shadow map-card h-100">
+            <div class="card-body">
+              <h3 class="text-center fw-bold mb-3">Find Us on Map</h3>
+
+              <div class="map-frame">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.478159392465!2d106.67347949678958!3d10.77464249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f0117c2b009%3A0x8a8bd5d1f6112b3e!2zUFJFTUlFUiBGSVRORVNTIENFTlRFUiAtIMSQxrDhu51uZyAzIHRow6FuZyAyLCBxdeG6rW4gMTA!5e0!3m2!1sen!2s!4v1777784651556!5m2!1sen!2s"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=10.7746425,106.6734794"
+                target="_blank"
+                class="btn btn-danger w-100 mt-3"
+              >
+                Get Directions
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="row g-5 mb-4">
+        <div class="col-md-6">
+          <section class="card p-4 shadow">
+            <h3 class="text-center fw-bold mb-4">Business Hours</h3>
+            <div>
+              <div class="d-flex justify-content-between py-3 border-bottom">
+                <span>Monday - Friday</span>
+                <span class="fw-bold">06:00 AM - 10:00 PM</span>
+              </div>
+
+              <div class="d-flex justify-content-between py-3 border-bottom">
+                <span>Saturday</span>
+                <span class="fw-bold">07:00 AM - 08:00 PM</span>
+              </div>
+
+              <div class="d-flex justify-content-between py-3 border-bottom">
+                <span>Sunday</span>
+                <span class="fw-bold">08:00 AM - 06:00 PM</span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="col-md-6">
+          <section class="card p-4 mb-4 shadow h-100">
+            <h3 class="text-center fw-bold">Contact Information</h3>
+            <div class="d-flex gap-4">
+              <div class="contact-icon bg-danger text-white rounded">
+                <i class="bi bi-geo-alt-fill fs-3"></i>
+              </div>
+              <div>
+                <p class="fw-bold fs-4">Our Location</p>
+                <p>123 Fitness Street</p>
+                <p>Connaught Place</p>
+                <p>New Delhi, 110001</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-4">
+              <div class="contact-icon bg-danger text-white rounded">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <p class="fw-bold fs-4">Phone Number</p>
+                <p>+91 98765 43210</p>
+                <p>+91 11 2345 6789</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-4">
+              <div class="contact-icon bg-danger text-white rounded">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div>
+                <p class="fw-bold fs-4">Email Address</p>
+                <p>info@fitnessgym.com</p>
+                <p>support@fitnessgym.com</p>
+                <p>New Delhi, 110001</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div data-include="footer.html"></div>
+  </body>
+</html>

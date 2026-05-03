@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomePage</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <header>
@@ -12,38 +18,73 @@
       <div data-include="navbar.html"></div>
 
       <!-- MAIN HERO SECTION -->
-      <div class="header-wrapper">
-        <section class="slogan">
-          <h1>New Body</h1>
-          <p>
-            Don't wait for a perfect moment, grab a moment and change it now
-          </p>
-          <p>You have chance to change your fitness!</p>
-        </section>
+      <div class="container header-wrapper">
+        <div class="row align-items-center py-5 g-5">
+          <div class="col-md-6">
+            <section class="text-white text-center">
+              <h1 class="display-1 fw-bold">
+                NEW BODY
+                <span class="text-danger d-block">NEW ME</span>
+              </h1>
+              <p class="fs-3">
+                Don't wait for a perfect moment, grab a moment and change it now
+              </p>
+              <p class="fs-3">You have chance to change your fitness!</p>
+              <a href="feature.html" class="btn btn-danger fw-bold fs-4 px-4">
+                Join Now!
+              </a>
+            </section>
+          </div>
 
-        <section class="achievents-board">
-          <section class="members-count">
-            <p>500+</p>
-            <p>Active Members</p>
-          </section>
+          <div class="col-md-6">
+            <div class="row g-4">
+              <div class="col-6 col-md-6">
+                <div
+                  class="card text-center h-100 bg-dark bg-opacity-75 border-0 text-white"
+                >
+                  <div class="card-body">
+                    <h3 class="text-danger fw-bold display-6">500+</h3>
+                    <p class="mb-0 fw-bold">Active Members</p>
+                  </div>
+                </div>
+              </div>
 
-          <section class="trainers-count">
-            <p>20+</p>
-            <p>Expert Trainers</p>
-          </section>
+              <div class="col-6 col-md-6">
+                <div
+                  class="card text-center h-100 bg-dark bg-opacity-75 border-0 text-white"
+                >
+                  <div class="card-body">
+                    <h3 class="text-danger fw-bold display-6">20+</h3>
+                    <p class="mb-0 fw-bold">Expert Trainers</p>
+                  </div>
+                </div>
+              </div>
 
-          <section class="week-class-count">
-            <p>60+</p>
-            <p>Classes Weekly</p>
-          </section>
+              <div class="col-6 col-md-6">
+                <div
+                  class="card text-center h-100 bg-dark bg-opacity-75 border-0 text-white"
+                >
+                  <div class="card-body">
+                    <h3 class="text-danger fw-bold display-6">60+</h3>
+                    <p class="mb-0 fw-bold">Classes Weekly</p>
+                  </div>
+                </div>
+              </div>
 
-          <section class="gym-access">
-            <p>24/7</p>
-            <p>Gym Access</p>
-          </section>
-        </section>
+              <div class="col-6 col-md-6">
+                <div
+                  class="card text-center h-100 bg-dark bg-opacity-75 border-0 text-white"
+                >
+                  <div class="card-body">
+                    <h3 class="text-danger fw-bold display-6">24/7</h3>
+                    <p class="mb-0 fw-bold">Gym Access</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
-    <script src="js/script.js"></script>
   </body>
 </html>

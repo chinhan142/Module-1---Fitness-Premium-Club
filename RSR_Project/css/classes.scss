@@ -3,12 +3,8 @@
 @import "footer";
 
 header {
-  background-color: #090d14;
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 300px;
+  min-height: 300px;
   width: 100%;
-  text-align: center;
 
   // align items in the center
   display: flex;
@@ -16,91 +12,43 @@ header {
   justify-content: center;
   align-items: center;
 
-  h2 {
-    margin-top: 0;
-    font-size: 3rem;
-  }
+  padding: 2rem 1rem;
 
-  p {
-    width: 810px;
-    font-size: larger;
-    line-height: 2;
-    margin-top: 0;
-  }
-}
-
-.title {
-  text-align: center;
-  font-size: 2rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #ff4d4d;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/gym-background.jpg") center/cover no-repeat;
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 1500px;
-  margin: 0 auto;
-  gap: 30px;
-
-  section {
-    width: 385px;
-
-    // for visual - delete later
-    border: 1px rgb(245, 237, 237) solid;
+  .card {
     border-radius: 10px;
-    box-shadow:
-      rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-
-    height: 520px;
     overflow: hidden;
-    padding: 0;
+    transition: box-shadow 0.5s ease;
 
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-    position: relative;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 40px;
+    }
 
     img {
       width: 100%;
-      height: 250px;
+      aspect-ratio: 4/3;
       object-fit: cover;
     }
 
-    .card-content {
-      h3 {
+    .class-info {
+      i {
+        color: #ff4d4d;
+        width: 20px;
+        font-size: 1.1rem;
         text-align: center;
-        margin-bottom: 0px;
       }
 
-      .description {
-        text-align: center;
-        margin-bottom: 20px;
-        padding: 0 15px;
-      }
-
-      .class-info {
-        margin-top: auto;
-        padding: 0 25px 20px;
-
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
-        p {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-        }
-
-        i {
-          color: #ff4d4d;
-          width: 20px;
-          text-align: center;
-        }
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.5rem;
       }
     }
   }

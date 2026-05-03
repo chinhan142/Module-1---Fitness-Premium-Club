@@ -1,0 +1,45 @@
+@import "default";
+@import "navbar";
+@import "footer";
+
+header {
+  min-height: 300px;
+  width: 100%;
+
+  // align items in the center
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 1rem;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/gym-background.jpg") center/cover no-repeat;
+}
+
+.contact-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.map-frame {
+  border-radius: 10px;
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+  }
+}
